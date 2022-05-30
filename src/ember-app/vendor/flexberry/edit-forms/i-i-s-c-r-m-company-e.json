@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Adminstrator",
+      "projection": "AdminstratorL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Company",
+  "name": "IISCRMCompanyE",
+  "className": "CompanyE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-c-r-m-company",
+      "modelProjection": "CompanyE"
+    }
+  ]
+}

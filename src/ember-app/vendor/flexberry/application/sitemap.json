@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "CRM",
+  "applicationTitle": "CRM",
+  "items": [
+    {
+      "link": null,
+      "menuName": "c-r-m",
+      "caption": "CRM",
+      "title": "CRM",
+      "children": [
+        {
+          "link": "i-i-s-c-r-m-contact-l",
+          "menuName": null,
+          "caption": "Contact",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-c-r-m-product-l",
+          "menuName": null,
+          "caption": "Product",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-c-r-m-adminstrator-l",
+          "menuName": null,
+          "caption": "Adminstrator",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-c-r-m-company-l",
+          "menuName": null,
+          "caption": "Company",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

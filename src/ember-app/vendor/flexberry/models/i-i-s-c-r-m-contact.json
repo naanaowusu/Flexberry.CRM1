@@ -1,0 +1,167 @@
+﻿{
+  "name": "IISCRMContact",
+  "modelName": "i-i-s-c-r-m-contact",
+  "className": "Contact",
+  "nameSpace": "IIS.CRM",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "surname",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "telephone",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "adress",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "gender",
+      "type": "i-i-s-c-r-m-t-gender",
+      "flexberryType": "tGender",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "email",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "company",
+      "relatedTo": "i-i-s-c-r-m-company",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ContactE",
+      "modelName": "i-i-s-c-r-m-contact",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "surname",
+          "caption": "Surname",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "telephone",
+          "caption": "Telephone",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "adress",
+          "caption": "Adress",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "gender",
+          "caption": "Gender",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "email",
+          "caption": "Email",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ContactL",
+      "modelName": "i-i-s-c-r-m-contact",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "surname",
+          "caption": "Surname",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "telephone",
+          "caption": "Telephone",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "adress",
+          "caption": "Adress",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "gender",
+          "caption": "Gender",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "email",
+          "caption": "Email",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

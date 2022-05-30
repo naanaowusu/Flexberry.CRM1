@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Adminstrator",
+  "name": "IISCRMAdminstratorE",
+  "className": "AdminstratorE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-c-r-m-adminstrator",
+      "modelProjection": "AdminstratorE"
+    }
+  ]
+}

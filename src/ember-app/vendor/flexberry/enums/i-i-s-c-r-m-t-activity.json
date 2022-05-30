@@ -1,0 +1,10 @@
+﻿{
+  "nameSpace": "IIS.CRM",
+  "className": "tActivity",
+  "enumObjects": {
+    "Validating": "Validating",
+    "Sales": "Sales Call",
+    "Emailing": "Emailing",
+    "Interview": "Interviews"
+  }
+}

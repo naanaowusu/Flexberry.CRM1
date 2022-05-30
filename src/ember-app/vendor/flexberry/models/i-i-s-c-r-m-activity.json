@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISCRMActivity",
+  "modelName": "i-i-s-c-r-m-activity",
+  "className": "Activity",
+  "nameSpace": "IIS.CRM",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "activityType",
+      "type": "i-i-s-c-r-m-t-activity",
+      "flexberryType": "tActivity",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "product",
+      "relatedTo": "i-i-s-c-r-m-product",
+      "inverse": "activity"
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "contactInActivity",
+      "relatedTo": "i-i-s-c-r-m-contact-in-activity",
+      "inverse": "activity"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ActivityE",
+      "modelName": "i-i-s-c-r-m-activity",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "activityType",
+          "caption": "Activity type",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ContactInActivityE",
+          "caption": "Contact in activity",
+          "name": "contactInActivity",
+          "relatedTo": "i-i-s-c-r-m-contact-in-activity",
+          "inverse": null
+        }
+      ]
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

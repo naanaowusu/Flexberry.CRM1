@@ -1,0 +1,92 @@
+﻿{
+  "name": "IISCRMContactInActivity",
+  "modelName": "i-i-s-c-r-m-contact-in-activity",
+  "className": "ContactInActivity",
+  "nameSpace": "IIS.CRM",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "dateOfActivity",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "result",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "contact",
+      "relatedTo": "i-i-s-c-r-m-contact",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "activity",
+      "relatedTo": "i-i-s-c-r-m-activity",
+      "inverse": "contactInActivity"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ContactInActivityE",
+      "modelName": "i-i-s-c-r-m-contact-in-activity",
+      "attrs": [
+        {
+          "name": "dateOfActivity",
+          "caption": "Date of activity",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "result",
+          "caption": "Result",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "Contact",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Contact",
+          "name": "contact",
+          "relatedTo": "i-i-s-c-r-m-contact",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

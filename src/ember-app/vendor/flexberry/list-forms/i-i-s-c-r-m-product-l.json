@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-c-r-m-product-e",
+  "editForm": "i-i-s-c-r-m-product-e",
+  "external": false,
+  "caption": "Product",
+  "name": "IISCRMProductL",
+  "className": "ProductL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-c-r-m-product",
+      "modelProjection": "ProductL"
+    }
+  ]
+}

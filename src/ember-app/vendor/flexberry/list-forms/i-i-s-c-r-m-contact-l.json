@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-c-r-m-contact-e",
+  "editForm": "i-i-s-c-r-m-contact-e",
+  "external": false,
+  "caption": "Contact",
+  "name": "IISCRMContactL",
+  "className": "ContactL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-c-r-m-contact",
+      "modelProjection": "ContactL"
+    }
+  ]
+}

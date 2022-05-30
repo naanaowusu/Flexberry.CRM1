@@ -1,0 +1,9 @@
+﻿{
+  "nameSpace": "IIS.CRM",
+  "className": "tProduct",
+  "enumObjects": {
+    "Flexberry": "Flexberry AI",
+    "Designer": "Flexberry Designer",
+    "TeleMobis": "T-Mobis"
+  }
+}

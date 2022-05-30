@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Company",
+      "projection": "CompanyL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Activity.ContactInActivity.Contact",
+      "projection": "ContactL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Product",
+  "name": "IISCRMProductE",
+  "className": "ProductE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-c-r-m-product",
+      "modelProjection": "ProductE"
+    }
+  ]
+}
