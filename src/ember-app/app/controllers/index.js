@@ -22,7 +22,7 @@ export default Controller.extend({
             link: 'i-i-s-c-r-m-contact-l',
             caption: i18n.t('forms.application.sitemap.c-r-m.i-i-s-c-r-m-contact-l.caption'),
             title: i18n.t('forms.application.sitemap.c-r-m.i-i-s-c-r-m-contact-l.title'),
-            icon: 'calendar',
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-c-r-m-product-l',
@@ -34,12 +34,13 @@ export default Controller.extend({
             link: 'i-i-s-c-r-m-adminstrator-l',
             caption: i18n.t('forms.application.sitemap.c-r-m.i-i-s-c-r-m-adminstrator-l.caption'),
             title: i18n.t('forms.application.sitemap.c-r-m.i-i-s-c-r-m-adminstrator-l.title'),
+            icon: 'briefcase',
             children: null
           }, {
             link: 'i-i-s-c-r-m-company-l',
             caption: i18n.t('forms.application.sitemap.c-r-m.i-i-s-c-r-m-company-l.caption'),
             title: i18n.t('forms.application.sitemap.c-r-m.i-i-s-c-r-m-company-l.title'),
-            icon: 'building',
+            icon: 'book',
             children: null
           }]
         }
